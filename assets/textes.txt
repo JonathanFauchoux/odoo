@@ -1,0 +1,30 @@
+Home
+A faire
+Echanges
+
+
+# Home
+Un ERP ?
+
+Légende de la photo : Les outils d'un ERP
+
+
+Central dans le Système d’Information des entreprises, le PGI ou l'ERP se définit comme un groupe de modules relié à une base de données unique. L’ERP est un progiciel qui permet de gérer l’ensemble des processus opérationnels d’une entreprise en intégrant plusieurs fonctions de gestion : solution de gestion des commandes, solution de gestion des stocks, solution de gestion de la paie et de la comptabilité, solution de gestion e-commerce, solution de gestion de commerce BtoB ouBtoC ... dans un système. Autrement dit, l’ERP représente selon les gestionnaires la colonne vertébrale  d’une entreprise.
+
+
+En pratique
+Pour être qualifiée de « Progiciel de Gestion Intégré », une solution logicielle ERP doit couvrir au moins deux principes fondamentaux qui sont les suivants :
+1er Construire des applications informatiques sous forme de modules indépendants mais parfaitement compatibles sur une base de données unique et commune.
+2ème L’usage d’un moteur de Workflow permet de définir l’ensemble des tâches d’un processus et de gérer leur réalisation dans tous les modules du système qui en ont besoin.
+
+
+Un CRM ?
+Légende de la photo : Les outils d'un CRM
+
+En complément d'un ERP, et dans le cadre d'une démarche de satisfaction client, de nombreuses entreprises se dotent aussi d'un logiciel de CRM ou GRC.
+Cet outil leur permet de mettre en commun et de maximiser la connaissance d'un client donné et, ainsi, de mieux comprendre, anticiper et gérer ses besoins.
+
+# A faire
+To-Do List!
+Que faire?
+

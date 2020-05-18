@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css" media="all" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/f89ba6df49.js" crossorigin="anonymous"></script>
+   
+    <title>Odoo</title>
+</head>
+<body>
+    
+    <nav>
+        <h1 class="logo">
+            <img src="assets/images/Odoo_logo_rgb.svg" alt="logo">
+        </h1>
+        <ul class="menu">
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="afaire.html">A faire</a></li>
+            <li><a href="echanges.html">Echanges</a></li>
+            <li><a class="current" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    
+    <section class="contact">
+        <div class="title">
+            <h2>Contactez nous.</h2>
+            <img src="assets/images/odoo.png" alt="logo odoo">
+        </div>
+        
+
+        <form class="form" action="https://cepegra-frontend.xyz/selection-wf/" method="post">
+            <p class="'form-messages'"></p>
+            
+                <label for="firstname">Prénom</label>
+                <input type="text" id="firstname" name="firstname" placeholder="...">
+
+                <label for="lastname">Nom</label>
+                <input type="text" id="lastname" name="lastname" placeholder="...">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="...">
+
+                <label for="domaine">Domaine</label>
+                <select id="domaine" name="domaine">
+                    <option class="select-items" value="Commercial">Commercial</option>
+                    <option class="select-items" value="Technique">Technique</option>
+                    <option class="select-items" value="Autre">Autre</option>
+                </select>
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Vôtre message ici ..." style="height:200px"></textarea>
+
+                <input id="submit" type="submit" value="Envoyer">
+           
+            </form>
+
+    </section>
+    <footer class="footer">
+        <p>&copy; Jonathan Fauchoux - CEPEGRA 2020</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+
+</html>
+

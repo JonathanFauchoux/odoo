@@ -1,0 +1,109 @@
+// Contact
+
+.contact{
+    @include paddinglarge();
+    padding-bottom: 100px;
+    .title{
+        display: flex;
+        justify-content: space-between;
+        h2{
+            font-size: 55px;
+            margin: 0;
+            padding-bottom: 30px;
+        }
+        img{
+            width: 70px;
+            height: 70px;
+            
+            
+        }
+
+    }
+    
+    label{
+        color: white;
+    }
+    option:hover{
+        background-color: $violetclair !important;
+    }
+    select{
+        outline: none;
+        .select-items:selected{
+            background-color: $violetclair !important;
+        }
+        
+        
+    }
+    input{
+        width: 100%;
+        height: 50px;
+        padding: 10px 20px;
+
+    }
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text],input[type=email], select, textarea {
+        color: white;
+        background-color: rgba(192, 190, 190, 0.52);
+    width: 100%; /* Full width */
+    font-size: 18px;
+    padding: 12px 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+     /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        background-color: rgba(192, 190, 190, 0.52);
+        border: white 1px solid;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+        font-size:20px;
+    cursor: pointer;
+  }
+  
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+    background-color: white;
+    color: $violetfonce;
+    border: $violetfonce 1px solid;
+    box-shadow: 0px 5px 18px $violetfonce;
+  }
+  input:focus, textarea:focus, select:focus {
+    outline:  none;
+    box-shadow: 0px 10px 18px $violetfonce;
+  }
+  input::placeholder, textarea::placeholder, select::placeholder {
+    color: white ;
+  }
+  select option{
+    background-color: $violetclair;
+    
+  }
+
+
+  
+  /* Add a background color and some padding around the form */
+  .form {
+    border-radius: 5px;
+    background: center;
+    background-image: url("https://images.unsplash.com/photo-1533687384484-0d2829b9450d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80") ;
+    padding: 20px;
+  }
+  .form-messages{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      color: white;
+      display: none;
+  }
+}
+
+
+
+

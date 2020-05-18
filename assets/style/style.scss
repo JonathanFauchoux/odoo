@@ -1,0 +1,287 @@
+@import 'contact.scss';
+@import 'afaire.scss';
+@import 'echanges.scss';
+
+
+$violetclair:  #a24689;
+$violetfonce:  #913f7b;
+$turquoise : #26a69a;
+
+@mixin paddinglarge {
+    padding: 0 200px 0 200px;
+    
+}
+@mixin paddingsmall {
+    padding: 0 8% 0 8% !important;
+    
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: 
+    url("/fontes/Roboto-Light.ttf");
+   }
+
+
+
+html,
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  ul.menu
+{
+    background:#fff;
+}
+ul.menu li a
+{
+    text-decoration:none;
+}
+ul.menu li a.on
+{
+    background:yellow;
+    padding:2px 6px;
+}
+  nav{
+        .logo{
+            img{
+                width: 10%;
+                height: 10%;
+                left: 5%;
+                padding-left: 2%
+            }
+        }
+        .menu {
+            position: relative;
+            top: -2.5em;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: $violetclair;
+            box-shadow: 0px 5px 18px #888888;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            
+            li {
+                float: left;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    height: 100%;
+                    display: flex;
+                align-items: center;
+                    
+                }
+                a:hover {
+                    background-color: $violetfonce;
+                }
+                .current{
+                    background-color: $violetfonce;
+                }
+            
+            }
+        
+    
+        }
+        
+    }
+
+// home
+    
+    .home{
+        @include paddinglarge();
+        .title{
+            width: 100%;
+            font-size: 44px;
+        }
+        .article2{
+            margin-bottom: 70px;
+        }
+        .article1, .article2{
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 30px;
+            width: 100%;
+            .colone{
+                width: 33%;
+                padding-left: 10px ;
+                padding-right: 10px;
+            }
+            .image{
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%
+                }
+                
+            }
+            .paragraphe{
+                line-height: 150%;
+                h3{
+                    font-size: 36px;
+                }
+            }
+            .colone2{
+                width: 66%;
+                padding-left: 10px ;
+                padding-right: 10px;
+            }
+            .image2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 33%;
+                img{
+                    width:95%;
+                }
+                .credit{
+                    padding-top: 30px;
+                }
+            }
+            
+            
+        }
+    }
+    //footer
+
+    .footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background-color: $violetclair;
+        text-align: center;
+        border: $violetfonce 2px solid;
+        margin-top: 30px;
+        p{
+            color: white;
+            font-size: 16px;
+        }
+    }
+
+
+
+}
+
+// media querry
+
+
+@media screen and (max-width: 400px)
+{
+    nav{
+        .logo{
+            
+            img{
+                width: 25% !important;
+                height: 100%;
+                left: 5%;
+                padding-left: 2%
+            }
+        
+        }
+        ul{
+            top:-25Px !important;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+//home   
+    .home{
+        
+        @include paddingsmall();
+        .title{
+            font-size: 20px;
+        }
+        .article1, .article2{
+           
+            flex-direction: column !important;
+            align-items: center;
+            
+            
+            .colone, .colone2{
+                width: 100% !important;
+              
+            }
+            .paragraphe{
+                width: 100%;
+            }
+            .image, .image2{
+                width: 100% !important;
+            
+            }
+            
+        }
+    }
+//afaire
+    .afaire{
+        @include paddingsmall();
+        
+        h2{
+            font-size: 3.2em !important;
+        }
+        .ligne{
+            border: #888888 1px solid;
+            .hidden{
+                opacity: 1 !important;
+                
+                .container{
+                    font-size: 16px !important;
+                }
+            }
+        }
+        .inputafaire{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        .count{
+            opacity: 0;
+        }
+    }
+//Echanges
+    .echanges{
+        h2{
+            font-size: 35px !important;
+        }
+        @include paddingsmall();
+        .discussion{
+            padding-right: 0 !important;
+        }
+        .message{
+            p{
+                margin-left: 25px!important; 
+            }
+        }
+    }
+//contact
+.contact{
+    @include paddingsmall();
+    .title{
+        h2{
+            font-size: 32px !important;
+        }
+        img{
+            width: 50px !important;    
+            height: 50px !important;
+        }
+    }
+    
+}
+
+//footer
+    .footer{
+        opacity: 0;
+    }
+}

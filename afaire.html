@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css" media="all" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/f89ba6df49.js" crossorigin="anonymous"></script>
+    <title>Odoo</title>
+</head>
+<body>
+    
+        <nav>
+             <h1 class="logo">
+                 <img src="assets/images/Odoo_logo_rgb.svg" alt="logo">
+             </h1>
+         <ul class="menu">
+             <li><a href="index.html">Home</a></li>
+             <li><a class="current" href="afaire.html">A faire</a></li>
+             <li><a href="echanges.html">Echanges</a></li>
+             <li><a href="contact.html">Contact</a></li>
+           </ul>
+        </nav>
+        
+        
+        <section class="afaire">
+            <h2>To-Do List!</h2>
+
+            <form id="taskForm">
+                <div class="inputafaire">
+                        <label for="task"><i class="fas fa-list-ul"></i></label>
+                        <input type="text" id="task" name="task" placeholder="Que faire ?">
+
+                </div>
+                <button class="buttonafaire"type="submit">Ajouter</button>
+                
+
+            </form>
+            <ul id="tasks"></ul>
+
+            
+             
+               
+               
+            </div>
+            <div class="count">
+                <p>0</p>
+            </div>
+          </section>
+          <footer class="footer">
+              <p>&copy; Jonathan Fauchoux - CEPEGRA 2020</p>
+          </footer>
+          <script src="assets/js/main.js"></script>
+     </body>
+</html>
+
