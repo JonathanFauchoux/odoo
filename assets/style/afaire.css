@@ -1,0 +1,220 @@
+.afaire {
+  padding: 0 200px 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.afaire h2 {
+  color: #26a69a;
+  font-size: 4.7em;
+}
+
+.afaire .inputafaire {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.afaire input[type=text] {
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  height: 45px;
+}
+
+.afaire #tasks {
+  width: 100% !important;
+  padding: 0;
+}
+
+.afaire #task {
+  border-bottom: 1px solid #888888 !important;
+}
+
+.afaire ::-webkit-input-placeholder {
+  color: #888888;
+}
+
+.afaire :-ms-input-placeholder {
+  color: #888888;
+}
+
+.afaire ::-ms-input-placeholder {
+  color: #888888;
+}
+
+.afaire ::placeholder {
+  color: #888888;
+}
+
+.afaire .fa-list-ul {
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.afaire #taskForm {
+  width: 100%;
+}
+
+.afaire .list-group-item {
+  list-style: none;
+  opacity: 1;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  padding: 10px  30px;
+  border: #888888 1px solid;
+  margin-bottom: 20px;
+  /* Create a custom checkbox */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.afaire .list-group-item input[type=checkbox] {
+  position: relative;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+  padding-top: 5px;
+}
+
+.afaire .list-group-item button.removeTask {
+  background-color: transparent;
+  border: none;
+}
+
+.afaire .list-group-item .checkmark {
+  position: relative;
+  top: 12px;
+  right: 30px;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.afaire .list-group-item input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.afaire .list-group-item input:checked ~ .checkmark {
+  background-color: #26a69a;
+}
+
+.afaire .list-group-item .checkmark:after {
+  content: "";
+  display: none;
+}
+
+.afaire .list-group-item input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.afaire .list-group-item .checkmark:after {
+  position: relative;
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.afaire .list-group-item .fa-trash {
+  font-size: 18px;
+  color: #26a69a;
+}
+
+.buttonafaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #26a69a;
+  margin: 30px 0 30px 0;
+  border: #26a69a 1px solid;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 12px white;
+          box-shadow: 0px 5px 12px white;
+}
+
+.buttonafaire a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0 10px 0;
+}
+
+.buttonafaire:hover {
+  color: #26a69a;
+  background: white;
+  border: #26a69a 1px solid;
+  -webkit-box-shadow: 0px 5px 12px #26a69a;
+          box-shadow: 0px 5px 12px #26a69a;
+}
+
+.taskForm {
+  border-top: #888888 1px solid;
+  height: 100%;
+  width: 90%;
+  border: #888888 1px solid;
+}
+
+.count {
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  z-index: 2;
+}
+
+.count p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border: #6d0356 2px solid;
+  background-color: rgba(109, 3, 86, 0.82);
+  padding: 14px;
+  height: 9px;
+  border-radius: 500px;
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=afaire.css.map */

@@ -1,5 +1,18 @@
     // afaire
+    $violetclair:  #a24689;
+    $violetfonce:  #913f7b;
+    $turquoise : #26a69a;
+    
+    @mixin paddinglarge {
+        padding: 0 200px 0 200px;
+        
+    }
+    @mixin paddingsmall {
+        padding: 0 8% 0 8% !important;
+        
+    }
 
+    
     .afaire{
         @include paddinglarge();
         display: flex;
@@ -120,7 +133,7 @@
                     transform: rotate(45deg);
                 }
                 .fa-trash{
-                        
+                    font-size: 18px;
                     color: $turquoise;
                 }
               
@@ -151,15 +164,16 @@
 
                 
             }
-            :hover{
-                color: $turquoise;
-                background: white;
-                border: $turquoise 1px solid;
-                box-shadow: 0px 5px 12px $turquoise;
+            
+            
+            
+        }
+        .buttonafaire:hover{
+            color: $turquoise;
+            background: white;
+            border: $turquoise 1px solid;
+            box-shadow: 0px 5px 12px $turquoise;
 
-            }
-            
-            
         }
         .taskForm{
             border-top: #888888 1px solid;

@@ -1,4 +1,17 @@
 // Contact
+$violetclair:  #a24689;
+$violetfonce:  #913f7b;
+$turquoise : #26a69a;
+
+@mixin paddinglarge {
+    padding: 0 200px 0 200px;
+    
+}
+@mixin paddingsmall {
+    padding: 0 8% 0 8% !important;
+    
+}
+
 
 .contact{
     @include paddinglarge();
@@ -23,14 +36,12 @@
     label{
         color: white;
     }
-    option:hover{
-        background-color: $violetclair !important;
-    }
+    //option:hover{
+        //background-color: $violetclair !important;
+    //}
     select{
         outline: none;
-        .select-items:selected{
-            background-color: $violetclair !important;
-        }
+        
         
         
     }
@@ -86,8 +97,6 @@
     
   }
 
-
-  
   /* Add a background color and some padding around the form */
   .form {
     border-radius: 5px;

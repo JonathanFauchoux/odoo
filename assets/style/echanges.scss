@@ -1,4 +1,19 @@
 //Echanges
+
+$violetclair:  #a24689;
+$violetfonce:  #913f7b;
+$turquoise : #26a69a;
+
+@mixin paddinglarge {
+    padding: 0 200px 0 200px;
+    
+}
+@mixin paddingsmall {
+    padding: 0 8% 0 8% !important;
+    
+}
+
+
 .echanges{
     @include paddinglarge();
     padding-bottom: 75px;
@@ -42,7 +57,7 @@
         
         .content {
         padding: 0 18px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
@@ -50,8 +65,8 @@
             p{
                 font-style: italic;
                 margin-left: 55px;
-                padding-bottom: 10px; 
-                border: red 1px solid;
+                
+                
             }
         }
           
@@ -70,6 +85,11 @@
                 height: 40px;
                 outline: none;
                 padding-left: 10px;
+                
+            }
+            #pseudo:focus{
+                border-bottom: $turquoise 2px solid;
+                z-index: 2;
             }
             textarea{
                 width: 100%;
@@ -83,17 +103,33 @@
                 height: 50px;
                 font-size: 18px;
                 color: white;
+                border: transparent 1px solid;
                 background-color: $violetclair;
                 border-radius: 10px;
+                cursor: pointer;
+                
+                
             }
+            .answer:hover{
+                
+                color: $turquoise;
+                background: white;
+                border: $turquoise 1px solid;
+                box-shadow: 0px 5px 12px $turquoise;
+                
+            }
+            
             #pseudo{
                 border: none;
                 border-bottom: 1px solid #888888;
                 font-size: 18px;
+                
             }
+          
             label{
                 padding-bottom: 15px;
             }
         }
+       
     }
 }

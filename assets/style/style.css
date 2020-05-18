@@ -1,3 +1,477 @@
+.contact {
+  padding: 0 200px 0 200px;
+  padding-bottom: 100px;
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+  /* Add a background color and some padding around the form */
+}
+
+.contact .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .title h2 {
+  font-size: 55px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.contact .title img {
+  width: 70px;
+  height: 70px;
+}
+
+.contact label {
+  color: white;
+}
+
+.contact select {
+  outline: none;
+}
+
+.contact input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+}
+
+.contact input[type=text], .contact input[type=email], .contact select, .contact textarea {
+  color: white;
+  background-color: rgba(192, 190, 190, 0.52);
+  width: 100%;
+  /* Full width */
+  font-size: 18px;
+  padding: 12px 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+}
+
+.contact input[type=submit] {
+  background-color: rgba(192, 190, 190, 0.52);
+  border: white 1px solid;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contact input[type=submit]:hover {
+  background-color: white;
+  color: #913f7b;
+  border: #913f7b 1px solid;
+  -webkit-box-shadow: 0px 5px 18px #913f7b;
+          box-shadow: 0px 5px 18px #913f7b;
+}
+
+.contact input:focus, .contact textarea:focus, .contact select:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 10px 18px #913f7b;
+          box-shadow: 0px 10px 18px #913f7b;
+}
+
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder, .contact select::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder, .contact select:-ms-input-placeholder {
+  color: white;
+}
+
+.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder, .contact select::-ms-input-placeholder {
+  color: white;
+}
+
+.contact input::placeholder, .contact textarea::placeholder, .contact select::placeholder {
+  color: white;
+}
+
+.contact select option {
+  background-color: #a24689;
+}
+
+.contact .form {
+  border-radius: 5px;
+  background: center;
+  background-image: url("https://images.unsplash.com/photo-1533687384484-0d2829b9450d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  padding: 20px;
+}
+
+.contact .form-messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  color: white;
+  display: none;
+}
+
+.afaire {
+  padding: 0 200px 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.afaire h2 {
+  color: #26a69a;
+  font-size: 4.7em;
+}
+
+.afaire .inputafaire {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.afaire input[type=text] {
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  height: 45px;
+}
+
+.afaire #tasks {
+  width: 100% !important;
+  padding: 0;
+}
+
+.afaire #task {
+  border-bottom: 1px solid #888888 !important;
+}
+
+.afaire ::-webkit-input-placeholder {
+  color: #888888;
+}
+
+.afaire :-ms-input-placeholder {
+  color: #888888;
+}
+
+.afaire ::-ms-input-placeholder {
+  color: #888888;
+}
+
+.afaire ::placeholder {
+  color: #888888;
+}
+
+.afaire .fa-list-ul {
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.afaire #taskForm {
+  width: 100%;
+}
+
+.afaire .list-group-item {
+  list-style: none;
+  opacity: 1;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  padding: 10px  30px;
+  border: #888888 1px solid;
+  margin-bottom: 20px;
+  /* Create a custom checkbox */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.afaire .list-group-item input[type=checkbox] {
+  position: relative;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+  padding-top: 5px;
+}
+
+.afaire .list-group-item button.removeTask {
+  background-color: transparent;
+  border: none;
+}
+
+.afaire .list-group-item .checkmark {
+  position: relative;
+  top: 12px;
+  right: 30px;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.afaire .list-group-item input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.afaire .list-group-item input:checked ~ .checkmark {
+  background-color: #26a69a;
+}
+
+.afaire .list-group-item .checkmark:after {
+  content: "";
+  display: none;
+}
+
+.afaire .list-group-item input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.afaire .list-group-item .checkmark:after {
+  position: relative;
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.afaire .list-group-item .fa-trash {
+  font-size: 18px;
+  color: #26a69a;
+}
+
+.buttonafaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #26a69a;
+  margin: 30px 0 30px 0;
+  border: #26a69a 1px solid;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 12px white;
+          box-shadow: 0px 5px 12px white;
+}
+
+.buttonafaire a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0 10px 0;
+}
+
+.buttonafaire:hover {
+  color: #26a69a;
+  background: white;
+  border: #26a69a 1px solid;
+  -webkit-box-shadow: 0px 5px 12px #26a69a;
+          box-shadow: 0px 5px 12px #26a69a;
+}
+
+.taskForm {
+  border-top: #888888 1px solid;
+  height: 100%;
+  width: 90%;
+  border: #888888 1px solid;
+}
+
+.count {
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  z-index: 2;
+}
+
+.count p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border: #6d0356 2px solid;
+  background-color: rgba(109, 3, 86, 0.82);
+  padding: 14px;
+  height: 9px;
+  border-radius: 500px;
+  margin-bottom: 5px;
+}
+
+.echanges {
+  padding: 0 200px 0 200px;
+  padding-bottom: 75px;
+}
+
+.echanges .discussion, .echanges .newDiscussion {
+  padding-right: 300px;
+}
+
+.echanges .discussion h2, .echanges .newDiscussion h2 {
+  font-size: 55px;
+  margin-top: 0;
+}
+
+.echanges .discussion .collapsible, .echanges .newDiscussion .collapsible {
+  background-color: #a24689;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  padding-left: 15px;
+  outline: none;
+  font-size: 15px;
+}
+
+.echanges .discussion .active, .echanges .discussion .collapsible:hover, .echanges .newDiscussion .active, .echanges .newDiscussion .collapsible:hover {
+  background-color: #913f7b;
+}
+
+.echanges .discussion .collapsible:after, .echanges .newDiscussion .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-left: 0px;
+  padding-right: 10px;
+}
+
+.echanges .discussion .active:after, .echanges .newDiscussion .active:after {
+  content: "\2212";
+  padding-right: 10px;
+}
+
+.echanges .discussion .content, .echanges .newDiscussion .content {
+  padding: 0 18px;
+  padding-bottom: 10px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  background-color: #fafafa;
+}
+
+.echanges .discussion .content p, .echanges .newDiscussion .content p {
+  font-style: italic;
+  margin-left: 55px;
+}
+
+.echanges .intervenir {
+  width: 100%;
+}
+
+.echanges .intervenir h2 {
+  font-size: 55px;
+}
+
+.echanges .intervenir #formechanges {
+  width: 100%;
+}
+
+.echanges .intervenir #formechanges input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+}
+
+.echanges .intervenir #formechanges #pseudo:focus {
+  border-bottom: #26a69a 2px solid;
+  z-index: 2;
+}
+
+.echanges .intervenir #formechanges textarea {
+  width: 100%;
+  height: 80px;
+  outline: none;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.echanges .intervenir #formechanges .answer {
+  width: 120px;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  border: transparent 1px solid;
+  background-color: #a24689;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.echanges .intervenir #formechanges .answer:hover {
+  color: #26a69a;
+  background: white;
+  border: #26a69a 1px solid;
+  -webkit-box-shadow: 0px 5px 12px #26a69a;
+          box-shadow: 0px 5px 12px #26a69a;
+}
+
+.echanges .intervenir #formechanges #pseudo {
+  border: none;
+  border-bottom: 1px solid #888888;
+  font-size: 18px;
+}
+
+.echanges .intervenir #formechanges #pseudo:visited {
+  background-color: transparent;
+}
+
+.echanges .intervenir #formechanges label {
+  padding-bottom: 15px;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("/fontes/Roboto-Light.ttf");
@@ -221,544 +695,6 @@ html .footer p,
 body .footer p {
   color: white;
   font-size: 16px;
-}
-
-html .afaire,
-body .afaire {
-  padding: 0 200px 0 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-html .afaire h2,
-body .afaire h2 {
-  color: #26a69a;
-  font-size: 4.7em;
-}
-
-html .afaire .inputafaire,
-body .afaire .inputafaire {
-  width: 100%;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-html .afaire input[type=text],
-body .afaire input[type=text] {
-  outline: none;
-  border: none;
-  width: 100%;
-  font-size: 18px;
-  height: 45px;
-}
-
-html .afaire #tasks,
-body .afaire #tasks {
-  width: 100% !important;
-  padding: 0;
-}
-
-html .afaire #task,
-body .afaire #task {
-  border-bottom: 1px solid #888888 !important;
-}
-
-html .afaire ::-webkit-input-placeholder,
-body .afaire ::-webkit-input-placeholder {
-  color: #888888;
-}
-
-html .afaire :-ms-input-placeholder,
-body .afaire :-ms-input-placeholder {
-  color: #888888;
-}
-
-html .afaire ::-ms-input-placeholder,
-body .afaire ::-ms-input-placeholder {
-  color: #888888;
-}
-
-html .afaire ::placeholder,
-body .afaire ::placeholder {
-  color: #888888;
-}
-
-html .afaire .fa-list-ul,
-body .afaire .fa-list-ul {
-  padding-right: 20px;
-  font-size: 18px;
-}
-
-html .afaire #taskForm,
-body .afaire #taskForm {
-  width: 100%;
-}
-
-html .afaire .list-group-item,
-body .afaire .list-group-item {
-  list-style: none;
-  opacity: 1;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-          align-items: space-around;
-  padding: 10px  30px;
-  border: #888888 1px solid;
-  margin-bottom: 20px;
-  /* Create a custom checkbox */
-  /* When the checkbox is checked, add a blue background */
-  /* Create the checkmark/indicator (hidden when not checked) */
-  /* Show the checkmark when checked */
-  /* Style the checkmark/indicator */
-}
-
-html .afaire .list-group-item input[type=checkbox],
-body .afaire .list-group-item input[type=checkbox] {
-  position: relative;
-  top: 15px;
-  right: 15px;
-  width: 20px;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 2;
-  padding-top: 5px;
-}
-
-html .afaire .list-group-item button.removeTask,
-body .afaire .list-group-item button.removeTask {
-  background-color: transparent;
-  border: none;
-}
-
-html .afaire .list-group-item .checkmark,
-body .afaire .list-group-item .checkmark {
-  position: relative;
-  top: 12px;
-  right: 30px;
-  height: 20px;
-  width: 20px;
-  background-color: #eee;
-}
-
-html .afaire .list-group-item input ~ .checkmark,
-body .afaire .list-group-item input ~ .checkmark {
-  background-color: #ccc;
-}
-
-html .afaire .list-group-item input:checked ~ .checkmark,
-body .afaire .list-group-item input:checked ~ .checkmark {
-  background-color: #26a69a;
-}
-
-html .afaire .list-group-item .checkmark:after,
-body .afaire .list-group-item .checkmark:after {
-  content: "";
-  display: none;
-}
-
-html .afaire .list-group-item input:checked ~ .checkmark:after,
-body .afaire .list-group-item input:checked ~ .checkmark:after {
-  display: block;
-}
-
-html .afaire .list-group-item .checkmark:after,
-body .afaire .list-group-item .checkmark:after {
-  position: relative;
-  left: 5px;
-  top: 2px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-html .afaire .list-group-item .fa-trash,
-body .afaire .list-group-item .fa-trash {
-  color: #26a69a;
-}
-
-html .buttonafaire,
-body .buttonafaire {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50px;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #26a69a;
-  margin: 30px 0 30px 0;
-  border: #26a69a 1px solid;
-  border-radius: 5px;
-  color: white;
-  font-size: 18px;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0px 5px 12px white;
-          box-shadow: 0px 5px 12px white;
-}
-
-html .buttonafaire a,
-body .buttonafaire a {
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  padding: 10px 0 10px 0;
-}
-
-html .buttonafaire :hover,
-body .buttonafaire :hover {
-  color: #26a69a;
-  background: white;
-  border: #26a69a 1px solid;
-  -webkit-box-shadow: 0px 5px 12px #26a69a;
-          box-shadow: 0px 5px 12px #26a69a;
-}
-
-html .taskForm,
-body .taskForm {
-  border-top: #888888 1px solid;
-  height: 100%;
-  width: 90%;
-  border: #888888 1px solid;
-}
-
-html .count,
-body .count {
-  position: absolute;
-  right: 3%;
-  bottom: 3%;
-  z-index: 2;
-}
-
-html .count p,
-body .count p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  border: #6d0356 2px solid;
-  background-color: rgba(109, 3, 86, 0.82);
-  padding: 14px;
-  height: 9px;
-  border-radius: 500px;
-  margin-bottom: 5px;
-}
-
-.echanges {
-  padding: 0 200px 0 200px;
-  padding-bottom: 75px;
-}
-
-.echanges .discussion {
-  padding-right: 300px;
-}
-
-.echanges .discussion #newDiscussion .collapsible {
-  background-color: #a24689;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  padding-left: 15px;
-  outline: none;
-  font-size: 15px;
-}
-
-.echanges .discussion #newDiscussion .active, .echanges .discussion #newDiscussion .collapsible:hover {
-  background-color: #913f7b;
-}
-
-.echanges .discussion #newDiscussion .collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: left;
-  margin-left: 0px;
-  padding-right: 10px;
-}
-
-.echanges .discussion #newDiscussion .active:after {
-  content: "\2212";
-  padding-right: 10px;
-}
-
-.echanges .discussion #newDiscussion span .content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-  background-color: #fafafa;
-}
-
-.echanges .discussion #newDiscussion span .content p {
-  font-style: italic;
-  margin-left: 55px;
-}
-
-.echanges .discussion h2 {
-  font-size: 55px;
-  margin-top: 0;
-}
-
-.echanges .discussion .collapsible {
-  background-color: #a24689;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  padding-left: 15px;
-  outline: none;
-  font-size: 15px;
-}
-
-.echanges .discussion .active, .echanges .discussion .collapsible:hover {
-  background-color: #913f7b;
-}
-
-.echanges .discussion .collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: left;
-  margin-left: 0px;
-  padding-right: 10px;
-}
-
-.echanges .discussion .active:after {
-  content: "\2212";
-  padding-right: 10px;
-}
-
-.echanges .discussion .content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-  background-color: #fafafa;
-}
-
-.echanges .discussion .content p {
-  font-style: italic;
-  margin-left: 55px;
-}
-
-.echanges .intervenir {
-  width: 100%;
-}
-
-.echanges .intervenir h2 {
-  font-size: 55px;
-}
-
-.echanges .intervenir #formechanges {
-  width: 100%;
-}
-
-.echanges .intervenir #formechanges input {
-  width: 100%;
-  height: 40px;
-  outline: none;
-  padding-left: 10px;
-}
-
-.echanges .intervenir #formechanges textarea {
-  width: 100%;
-  height: 80px;
-  outline: none;
-  padding-left: 10px;
-  font-size: 18px;
-}
-
-.echanges .intervenir #formechanges .answer {
-  width: 120px;
-  height: 50px;
-  font-size: 18px;
-  color: white;
-  background-color: #a24689;
-  border-radius: 10px;
-}
-
-.echanges .intervenir #formechanges #pseudo {
-  border: none;
-  border-bottom: 1px solid #888888;
-  font-size: 18px;
-}
-
-.echanges .intervenir #formechanges label {
-  padding-bottom: 15px;
-}
-
-option:hover {
-  background-color: #913f7b !important;
-}
-
-.contact {
-  padding: 0 200px 0 200px;
-  padding-bottom: 85px;
-  /* Style inputs with type="text", select elements and textareas */
-  /* Style the submit button with a specific background color etc */
-  /* When moving the mouse over the submit button, add a darker green color */
-  /* Add a background color and some padding around the form */
-}
-
-.contact .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contact .title h2 {
-  font-size: 55px;
-  margin: 0;
-  padding-bottom: 30px;
-}
-
-.contact .title img {
-  width: 70px;
-  height: 70px;
-}
-
-.contact label {
-  color: white;
-}
-
-.contact option:hover {
-  background-color: #a24689 !important;
-}
-
-.contact select {
-  outline: none;
-}
-
-.contact select .select-items:selected {
-  background-color: #a24689 !important;
-}
-
-.contact input {
-  width: 100%;
-  height: 50px;
-  padding: 10px 20px;
-}
-
-.contact input[type=text], .contact input[type=email], .contact select, .contact textarea {
-  color: white;
-  background-color: rgba(192, 190, 190, 0.52);
-  width: 100%;
-  /* Full width */
-  font-size: 18px;
-  padding: 12px 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical;
-}
-
-.contact input[type=submit] {
-  background-color: rgba(192, 190, 190, 0.52);
-  border: white 1px solid;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.contact input[type=submit]:hover {
-  background-color: white;
-  color: #913f7b;
-  border: #913f7b 1px solid;
-  -webkit-box-shadow: 0px 5px 18px #913f7b;
-          box-shadow: 0px 5px 18px #913f7b;
-}
-
-.contact input:focus, .contact textarea:focus, .contact select:focus {
-  outline: none;
-  -webkit-box-shadow: 0px 10px 18px #913f7b;
-          box-shadow: 0px 10px 18px #913f7b;
-}
-
-.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder, .contact select::-webkit-input-placeholder {
-  color: white;
-}
-
-.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder, .contact select:-ms-input-placeholder {
-  color: white;
-}
-
-.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder, .contact select::-ms-input-placeholder {
-  color: white;
-}
-
-.contact input::placeholder, .contact textarea::placeholder, .contact select::placeholder {
-  color: white;
-}
-
-.contact select option {
-  background-color: #a24689;
-}
-
-.contact .form {
-  border-radius: 5px;
-  background: center;
-  background-image: url("https://images.unsplash.com/photo-1533687384484-0d2829b9450d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
-  padding: 20px;
-}
-
-.contact .form-messages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style: none;
-  color: white;
-  display: none;
 }
 
 @media screen and (max-width: 400px) {
